@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loja de Chinelos</title>
+	<style>
+        * {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #F4A261;
+	color: white;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 32px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin: 50px 0;
+}
+ </style>
+</head>
+<body>
+	<header>
+		<h1>Loja de Chinelos</h1>
+		<nav>
+			<ul>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#produtos">Produtos</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="sobre">
+			<h2>Sobre</h2>
+			<p>Nós somos uma loja especializada em chinelos confortáveis e estilosos. Com mais de 10 anos de experiência, oferecemos uma grande variedade de modelos para todas as ocasiões.</p>
+		</section>
+		<section id="produtos">
+			<h2>Produtos</h2>
+			<ul>
+				<li>
+					<img src="chinelos1.jpg" alt="Chinelo 1">
+					<h3>Chinelo 1</h3>
+					<p>R$ 29,99</p>
+				</li>
+				<li>
+					<img src="chinelos2.jpg" alt="Chinelo 2">
+					<h3>Chinelo 2</h3>
+					<p>R$ 39,99</p>
+				</li>
+				<li>
+					<img src="chinelos3.jpg" alt="Chinelo 3">
+					<h3>Chinelo 3</h3>
+					<p>R$ 49,99</p>
+				</li>
+			</ul>
+		</section>
+		<section id="contato">
+			<h2>Contato</h2>
+			<form>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem" required></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Loja de Chinelos &copy; 2023</p>
+	</footer>
+</body>
+</html>

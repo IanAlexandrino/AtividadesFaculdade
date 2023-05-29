@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta CEP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: beige;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .navbar {
+        display: flex;
+      }
+      .container{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      main > .container{
+        padding: 60px 15px 0;
+      }
+      .flex-shrink-0{
+        flex-shrink: 0;
+      }
+      header, main, nav {
+        display: block;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    
+      <header>
+        <nav
+          class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        >
+      <a class="navbar-brand" href="#">Consulta CEP</a>
+      </nav>
+      </header>
+      <main role="main" class="flex-shrink-0">
+      <div class="container"></div>
+
+      <h1>Digite seu CEP:</h1>
+      <input type="number" id="cep" maxlength="8"/>
+      <button onclick="consultaEndereco()">Consultar</button>
+      <div id="resultado">
+        
+      </div>
+    </div>
+    </main>
+    <script>
+      function consultaEndereco() {
+        let cep = document.querySelector("#cep").value;
+
+        if (cep.length !== 8) {
+          alert("CEP inválido");
+          return;
+        }
+
+        let url = "https://viacep.com.br/ws/" + cep + "/json/";
+
+        fetch(url).then(function (response) {
+          response.json().then(function (data) {
+            console.log(data);
+            mostrarEndereco(data);
+          });
+        });
+      }
+      function mostrarEndereco(dados) {
+        let resultado = document.querySelector("#resultado");
+        if (dados.erro) {
+          resultado.innerHTML =
+            "<p>Endereço não encontrado, por favor verifique o seu endereço ou tente outro.";
+        } else {
+          resultado.innerHTML =
+            "<p>Endereço: " +
+            dados.logradouro +
+            "</p> <p>DDD: " +
+            dados.ddd +
+            "</p> <p>Bairro: " +
+            dados.bairro +
+            "</p> <p>Cidade: " +
+            dados.localidade +
+            "-" +
+            dados.uf +
+            "</p>";
+        }
+      }
+    </script>
+  </body>
+</html>

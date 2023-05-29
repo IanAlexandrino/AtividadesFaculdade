@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--Script usado no código-->
+    <script src="script.js"></script>
+    <script src="banco.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <label for="">TPW - Tribunal Programming Eleitoral</label>
+      <div class="headerBtnGroup">
+        <button class="navBtn"><a target="_self" href="index.html">Urna</a></button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="containermesario" id="quadroUrna">
+        <div class="texto text-center mt-3">
+          <p>
+            <b>Bem vindo, Mesário!</b><br />
+            <b>Acompanhe a apuração</b>
+          </p>
+        </div>
+        <div class="candidatos">
+          <div class="apuracandidato01 text-center">
+            <span id="nomeCandidato1"><b>Gustavo</b></span
+            ><br />
+            <span id="pcrtVotos1">0%</span><br />
+            <span id="qtVotos1">XXX votos</span>
+          </div>
+          <div class="apuracandidato02 text-center">
+            <span id="nomeCandidato2 vt"><b>Heric</b></span
+            ><br />
+            <span id="pcrtVotos2">0%</span><br />
+            <span id="qtVotos2">XXX votos</span>
+          </div>
+          <div class="apuracandidato03 text-center">
+            <span id="nomeCandidato3"><b>Ian</b></span
+            ><br />
+            <span id="pcrtVotos3">0%</span><br />
+            <span id="qtVotos3">XXX votos</span>
+          </div>
+        </div>
+        <div class="nulosbrancos">
+            <div class="brancos text-center">
+              <span id="nomeCandidato4"><b>Votos brancos</b></span
+              ><br />
+              <span id="pcrtVotos4">0%</span><br />
+              <span id="qtVotos4">XXX votos</span>
+            </div>
+            <div class="apuracandidato02 text-center">
+              <span id="nomeCandidato5"><b>Votos Nulos</b></span
+              ><br />
+              <span id="pcrtVotos5">0%</span><br />
+              <span id="qtVotos5">XXX votos</span>
+            </div>
+      </div>
+      <div class="totalvotos">
+        <div class="total text-center">
+         <span id="nomeCandidato1"><b>Total de Votos</b></span><br />
+        <span id="totaldevotos">--</span><br />   
+        </div>  
+        <div class="botoes">
+            <button type="button"class="btnn btn btn-primary mt-4 mb-4" onclick="preencherTelaMesario()">ATUALIZAR</button>
+            
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        Projeto desenvolvido por Gustavo Gonzaga, Heric Laércio e Ian Rodrigues.
+      </p>
+    </footer>
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

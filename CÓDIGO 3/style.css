@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #dedede;
+}
+
+p {
+  padding: 2px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 8px 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logoNavBar {
+  width: 200px;
+}
+
+.headerBtnGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.navBtn {
+  font-size: 16px;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: rgb(129, 129, 129);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navBtn:hover a {
+  color: white;
+  border-bottom: 2px solid rgb(209, 209, 209);
+}
+.navBtn a {
+  text-decoration: none;
+  color: rgb(129, 129, 129);
+}
+
+.container {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.container01 {
+  background-color: #f5f3e9;
+  width: 600px;
+  height: 700px;
+  border-radius: 15px;
+}
+
+.containermesario {
+  background-color: #f5f3e9;
+  width: 600px;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.container02 {
+  background-color: black;
+  width: 580px;
+  height: 280px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.telaInfo {
+  background-color: white;
+  width: 550px;
+  height: 260px;
+  border-radius: 15px;
+  margin-left: 5px;
+  display: flex;
+}
+
+.textoTela {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.membroText {
+  padding-left: 30px;
+}
+
+#fotoCandidato {
+  width: 150px;
+  height: auto;
+  margin-left: 35px;
+  margin-top: 08px;
+}
+
+.areaTeclas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.logo {
+  margin-top: 160px;
+}
+
+.teclado {
+  margin-top: 70px;
+}
+
+.primeiralinha {
+  margin-bottom: 10px;
+}
+
+.segundalinha {
+  margin-bottom: 10px;
+}
+
+.terceiralinha {
+  margin-bottom: 10px;
+}
+
+.ultimalinha {
+  margin-left: 60px;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.candidatos {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.nulosbrancos {
+  margin-top: 30px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.botoes {
+  width: 220px;
+}
+
+.totalvotos {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+#pcrtVotos {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#totaldevotos {
+  font-size: 80px;
+  font-weight: bolder;
+}
+#nmrvoto {
+  border-color: transparent;
+}
+#nomevoto {
+  border-color: transparent;
+}
