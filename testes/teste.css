@@ -1,0 +1,43 @@
+.block1 {
+  background-color: aqua;
+  background-image: url(imagem/gato\ calvo.jpg);
+  width: 300px;
+  height: 500px;
+  border: 1px solid gray;
+  margin: 10px;
+  float: left;
+}
+.block2 {
+  background-color: aqua;
+  background-image: url(imagem/gato\ calvo.jpg);
+  width: 300px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 10px;
+  float: left;
+}
+.block3 {
+  background-color: aqua;
+  background-image: url(imagem/gato\ calvo.jpg);
+  width: 300px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 10px;
+  float: left;
+}
+.block4 {
+  background-color: aqua;
+  background-image: url(imagem/gato\ calvo.jpg);
+  width: 2000px;
+  height: 300px;
+  border: 1px solid gray;
+  margin: 10px;
+  float: left;
+}
+#gato {
+  /* background-image: url(imagem/gato\ calvo.jpg) ; */
+  background-color: blueviolet;
+}
+.penis {
+  clear: both;
+}
