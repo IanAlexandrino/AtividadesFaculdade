@@ -31,27 +31,27 @@ a:hover {
   background-color: #f99200;
   color: white;
 }
-#home .home a {
+#home #navVertical .home a {
   background-position: right bottom;
   background-color: #f99200;
   color: white;
 }
-#sobre .sobre a {
+#sobre #navVertical .sobre a {
   background-position: right bottom;
   background-color: #f99200;
   color: white;
 }
-#servicos .servicos a {
+#servicos #navVertical .servicos a {
   background-position: right bottom;
   background-color: #f99200;
   color: white;
 }
-#noticias .noticias a {
+#noticias #navVertical .noticias a {
   background-position: right bottom;
   background-color: #f99200;
   color: white;
 }
-#contato .contato a {
+#contato #navVertical .contato a {
   background-position: right bottom;
   background-color: #f99200;
   color: white;
