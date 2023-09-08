@@ -1,0 +1,45 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 720px;
+}
+
+ul li {
+  /* border: 1px solid red; */
+  float: left;
+  background: url(../arquivos-necessarios-navegacao-abas/aba-direita.png)
+    no-repeat top right;
+}
+
+li a {
+  display: block;
+  padding: 0 2em;
+  line-height: 3em;
+  text-decoration: none;
+  background: url(../arquivos-necessarios-navegacao-abas/aba-esquerda.png)
+    no-repeat top left;
+  color: white;
+}
+
+ul a:hover {
+  color: #894a1f;
+}
+
+ul #atual {
+  background: url(../arquivos-necessarios-navegacao-abas/aba-direita-atual.png)
+    no-repeat top right;
+}
+
+ul #atual a {
+  background: url(../arquivos-necessarios-navegacao-abas/aba-esquerda-atual.png)
+    no-repeat top left;
+}
+
+p {
+  clear: both;
+}
